@@ -1,1 +1,1 @@
-# AndroidProject
+# CharityApp
