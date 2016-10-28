@@ -35,26 +35,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/edt_password"
         android:ems="10"
         android:id="@+id/lbl_passLogin"
         android:layout_below="@+id/lbl_userLogin"
         android:layout_alignLeft="@+id/button"
         android:layout_alignStart="@+id/button"
-        android:layout_marginTop="28dp" />
+        android:layout_marginTop="28dp"
+        android:hint="@string/edt_password" />
 
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/edt_username"
         android:ems="10"
         android:id="@+id/lbl_userLogin"
         android:layout_marginTop="111dp"
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/lbl_passLogin"
-        android:layout_alignStart="@+id/lbl_passLogin" />
+        android:layout_alignStart="@+id/lbl_passLogin"
+        android:hint="@string/edt_username" />
 
     <Button
         android:text="@string/btn_login"
