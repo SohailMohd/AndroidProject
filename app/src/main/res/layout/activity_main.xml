@@ -31,42 +31,54 @@
         android:onClick="openRegisterPage"
         android:id="@+id/button2" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/lbl_passLogin"
-        android:layout_below="@+id/lbl_userLogin"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginTop="28dp"
-        android:hint="@string/edt_password" />
-
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/lbl_userLogin"
-        android:layout_marginTop="111dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/lbl_passLogin"
-        android:layout_alignStart="@+id/lbl_passLogin"
-        android:hint="@string/edt_username" />
 
     <Button
         android:text="@string/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
         android:onClick="loginVerify"
-        android:layout_below="@+id/lbl_passLogin"
+        android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2" />
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginBottom="77dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edt_loginPassword"
+        android:hint="@string/edt_password"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edt_loginEmail"
+        android:hint="@string/edt_email"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/edt_loginUsername"
+        android:layout_alignLeft="@+id/edt_loginUsername"
+        android:layout_alignStart="@+id/edt_loginUsername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edt_loginUsername"
+        android:hint="@string/edt_username"
+        android:layout_above="@+id/edt_loginPassword"
+        android:layout_alignLeft="@+id/edt_loginPassword"
+        android:layout_alignStart="@+id/edt_loginPassword"
+        android:layout_marginBottom="12dp" />
 
 </RelativeLayout>

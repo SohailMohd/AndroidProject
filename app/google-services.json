@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "221736679869",
+    "firebase_url": "https://charityapp-8474b.firebaseio.com",
+    "project_id": "charityapp-8474b",
+    "storage_bucket": "charityapp-8474b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221736679869:android:dac84c7a65a0a09e",
+        "android_client_info": {
+          "package_name": "ca.uoit.msohail.charityapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221736679869-ucvj5jl52bqgha71ii7dgcruse1i935q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6m-Nw_g1dJ6863jRpQR8PpSJKRVaBM6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

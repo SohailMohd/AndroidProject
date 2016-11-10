@@ -23,7 +23,8 @@
         android:hint="@string/edt_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="13dp" />
+        android:layout_marginLeft="13dp"
+        android:id="@+id/registerUsername" />
 
     <TextView
         android:text="@string/label_password"
@@ -36,22 +37,24 @@
         android:hint="@string/edt_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="13dp" />
+        android:layout_marginLeft="13dp"
+        android:id="@+id/registerPassword" />
 
     <TextView
-        android:text="@string/label_eamil"
+        android:text="@string/lbl_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="13dp"/>
 
     <EditText
-        android:hint="@string/edt_eamil"
+        android:hint="@string/edt_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:layout_marginLeft="13dp" />
+        android:layout_marginLeft="13dp"
+        android:id="@+id/registerEmail"/>
 
 
     <TextView
