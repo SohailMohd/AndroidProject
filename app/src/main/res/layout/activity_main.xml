@@ -48,7 +48,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/edt_loginPassword"
         android:hint="@string/edt_password"
@@ -60,25 +60,32 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/edt_loginEmail"
         android:hint="@string/edt_email"
-        android:layout_marginBottom="12dp"
-        android:layout_above="@+id/edt_loginUsername"
-        android:layout_alignLeft="@+id/edt_loginUsername"
-        android:layout_alignStart="@+id/edt_loginUsername" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edt_loginPassword"
+        android:layout_alignStart="@+id/edt_loginPassword" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/edt_loginUsername"
-        android:hint="@string/edt_username"
         android:layout_above="@+id/edt_loginPassword"
         android:layout_alignLeft="@+id/edt_loginPassword"
         android:layout_alignStart="@+id/edt_loginPassword"
-        android:layout_marginBottom="12dp" />
+        android:id="@+id/passwordError"
+        android:text=" "
+        android:textColor="@android:color/holo_red_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailError"
+        android:layout_above="@+id/edt_loginEmail"
+        android:layout_alignLeft="@+id/edt_loginEmail"
+        android:layout_alignStart="@+id/edt_loginEmail"
+        android:text=" "
+        android:textColor="@android:color/holo_red_light" />
 
 </RelativeLayout>
