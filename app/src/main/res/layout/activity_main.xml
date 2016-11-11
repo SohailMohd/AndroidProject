@@ -11,6 +11,7 @@
     android:background="#49dd7f"
     tools:context="ca.uoit.msohail.charityapp.MainActivity">
 
+
     <TextView
         android:text="@string/welcome_title"
         android:textSize="37dp"
@@ -19,7 +20,6 @@
         android:id="@+id/textView"
         android:layout_marginTop="23dp"
         android:layout_centerHorizontal="true" />
-
 
     <Button
         android:text="@string/btn_register"
@@ -45,28 +45,6 @@
         android:layout_toStartOf="@+id/button2"
         android:layout_marginBottom="77dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/edt_loginPassword"
-        android:hint="@string/edt_password"
-        android:layout_above="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginBottom="28dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/edt_loginEmail"
-        android:hint="@string/edt_email"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/edt_loginPassword"
-        android:layout_alignStart="@+id/edt_loginPassword" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -83,9 +61,34 @@
         android:layout_height="wrap_content"
         android:id="@+id/emailError"
         android:layout_above="@+id/edt_loginEmail"
-        android:layout_alignLeft="@+id/edt_loginEmail"
-        android:layout_alignStart="@+id/edt_loginEmail"
         android:text=" "
-        android:textColor="@android:color/holo_red_light" />
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignLeft="@+id/edt_loginEmail"
+        android:layout_alignStart="@+id/edt_loginEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edt_loginEmail"
+        android:hint="@string/edt_email"
+        android:layout_above="@+id/passwordError"
+        android:layout_toRightOf="@+id/passwordError"
+        android:layout_toEndOf="@+id/passwordError"
+        android:layout_marginBottom="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edt_loginPassword"
+        android:hint="@string/edt_password"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
 
 </RelativeLayout>

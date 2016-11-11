@@ -72,38 +72,40 @@ public class MainActivity extends AppCompatActivity {
             passwordError.setText(error_password);
             return;
         }
+        else {
 
+            openMain = new Intent(this, Login.class);
+            progressDialog = ProgressDialog.show(MainActivity.this, "Please wait...", "Processing...", true);
 
-        openMain = new Intent(this, Login.class);
-        progressDialog = ProgressDialog.show(MainActivity.this, "Please wait...", "Processing...", true);
+            (firebaseAuth.signInWithEmailAndPassword(userEmail, userPassword))
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
-        (firebaseAuth.signInWithEmailAndPassword(userEmail, userPassword))
-                .addOnCompleteListener(new OnCompleteListener <AuthResult>(){
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                progressDialog.dismiss();
 
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            progressDialog.dismiss();
+                                Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_LONG).show();
+                                loginEmail.setText("");
+                                loginPassword.setText("");
+                                emailError.setText("");
+                                passwordError.setText("");
+                                startActivity(openMain);
+                            } else {
+                                Toast.makeText(MainActivity.this, "Login not verified, try again", Toast.LENGTH_LONG).show();
+                                progressDialog.dismiss();
+                                loginEmail.setText("");
+                                loginPassword.setText("");
+                                emailError.setText("");
+                                passwordError.setText("");
 
-                            Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_LONG).show();
-                            loginEmail.setText("");
-                            loginPassword.setText("");
-                            loginUsername.setText("");
-
-                            startActivity(openMain);
+                            }
                         }
-                        else {
-                            Toast.makeText(MainActivity.this, "Login not verified, try again", Toast.LENGTH_LONG).show();
-                            loginEmail.setText("");
-                            loginPassword.setText("");
-                            loginUsername.setText("");
-                        }
-                    }
-                });
+
+                    });
+        }
 
 
     }
-
-
 
 }
