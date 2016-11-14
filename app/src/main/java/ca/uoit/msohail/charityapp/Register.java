@@ -71,7 +71,7 @@ public class Register  extends Activity {
             Toast.makeText(this, "Need to enter email", Toast.LENGTH_LONG).show();
         }
         if(TextUtils.isEmpty(password)){
-            Toast.makeText(this, "Need to enter email", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Need to enter a password", Toast.LENGTH_LONG).show();
         }
         else {
             progressDialog = ProgressDialog.show(Register.this, "Please wait...", "Processing...", true);
@@ -88,8 +88,7 @@ public class Register  extends Activity {
 
                             if (task.isSuccessful()){
                                 Toast.makeText(Register.this, "Sucessfully registered", Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(Register.this, MainActivity.class);
-                                startActivity(intent);
+                                finish();
                             }
                             else{
                                 Toast.makeText(Register.this, "Did not sucessfully register", Toast.LENGTH_LONG).show();
