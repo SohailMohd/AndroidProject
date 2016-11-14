@@ -14,13 +14,13 @@
 
     //register
     <string name="register_title">Register</string>
-    <string name="label_eamil">Email</string>
-    <string name="edt_eamil">Enter email</string>
     <string name="label_address">Address</string>
     <string name="edt_address">Enter address</string>
     <string name="label_hphone">Home Phone:</string>
     <string name="edt_hphone">Enter home phone</string>
     <string name="label_cphone">Cell Phone:</string>
     <string name="edt_cphone">Enter cell phone</string>
+    <string name="lbl_email">Email:</string>
+    <string name="edt_email">Enter Email</string>
 
 </resources>
