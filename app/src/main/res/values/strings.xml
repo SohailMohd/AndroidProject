@@ -22,5 +22,18 @@
     <string name="edt_cphone">Enter cell phone</string>
     <string name="lbl_email">Email:</string>
     <string name="edt_email">Enter Email</string>
+    <string name="btn_viewAds">View Advertisements</string>
+    <string name="btn_postAd">Post Advertisment</string>
+    <string name="btn_donate">Donate to Charities</string>
+    <string name="btn_nearCharity">Nearby Charities</string>
+
+    //charity options
+    <string name="lbl_title">What good works do you want to do today?</string>
+
+    //Post Advertisements
+    <string name="lbl_adType">What type of Ad is this?</string>
+    <string name="btn_postAdvertisement">Post Ad</string>
+
+
 
 </resources>

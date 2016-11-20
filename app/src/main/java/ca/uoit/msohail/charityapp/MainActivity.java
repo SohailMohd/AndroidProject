@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,8 +14,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,17 +71,15 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
 
-            openMain = new Intent(this, Login.class);
+            openMain = new Intent(this, CharityOptions.class);
             progressDialog = ProgressDialog.show(MainActivity.this, "Please wait...", "Processing...", true);
 
-            (firebaseAuth.signInWithEmailAndPassword(userEmail, userPassword))
+            firebaseAuth.signInWithEmailAndPassword(userEmail, userPassword)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 progressDialog.dismiss();
-
                                 Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_LONG).show();
                                 loginEmail.setText("");
                                 loginPassword.setText("");
