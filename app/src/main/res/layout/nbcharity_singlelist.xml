@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:hint="@string/hint_charityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/lbl_charity_name" />
+
+    <TextView
+        android:hint="@string/hint_setCharityDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_charity_name"
+        android:layout_alignLeft="@+id/lbl_charity_name"
+        android:layout_alignStart="@+id/lbl_charity_name"
+        android:layout_marginTop="17dp"
+        android:id="@+id/setCharityDescription" />
+
+    <TextView
+        android:text="@string/lbl_charityAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setCharityDescription"
+        android:layout_alignLeft="@+id/setCharityDescription"
+        android:layout_alignStart="@+id/setCharityDescription"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:text="@string/lbl_charityPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView12" />
+
+    <TextView
+        android:hint="@string/hint_setCharityPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignLeft="@+id/setCharityAddress"
+        android:layout_alignStart="@+id/setCharityAddress"
+        android:id="@+id/setCharityPhone" />
+
+    <TextView
+        android:text="@string/lbl_charityWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:id="@+id/textView14" />
+
+    <TextView
+        android:hint="@string/hint_setCharityAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/setCharityAddress"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toRightOf="@+id/setCharityDescription"
+        android:layout_toEndOf="@+id/setCharityDescription" />
+
+    <TextView
+        android:hint="@string/hing_setCharityWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignLeft="@+id/setCharityPhone"
+        android:layout_alignStart="@+id/setCharityPhone"
+        android:id="@+id/setCharityWebsite" />
+
+
+</RelativeLayout>
