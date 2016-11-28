@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -8,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#49dd7f"
+    android:background="#b1479c56"
     tools:context="ca.uoit.msohail.charityapp.MainActivity">
 
 
@@ -66,6 +68,7 @@
         android:layout_alignLeft="@+id/edt_loginEmail"
         android:layout_alignStart="@+id/edt_loginEmail" />
 
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,10 +76,10 @@
         android:ems="10"
         android:id="@+id/edt_loginEmail"
         android:hint="@string/edt_email"
+        android:layout_marginBottom="47dp"
         android:layout_above="@+id/passwordError"
         android:layout_toRightOf="@+id/passwordError"
-        android:layout_toEndOf="@+id/passwordError"
-        android:layout_marginBottom="45dp" />
+        android:layout_toEndOf="@+id/passwordError" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -90,5 +93,27 @@
         android:layout_alignLeft="@+id/button"
         android:layout_alignStart="@+id/button" />
 
+    <!-- -->
+
+    <!--    <TextView
+        android:text="Google display name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/google_displayName"
+        android:layout_alignBottom="@+id/btn_gSignin"
+        android:layout_toRightOf="@+id/btn_gSignin"
+        android:layout_toEndOf="@+id/btn_gSignin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_gSignin"
+            android:onClick="googleSignIn"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/passwordError"
+            android:layout_alignStart="@+id/passwordError" />  -->
 
 </RelativeLayout>

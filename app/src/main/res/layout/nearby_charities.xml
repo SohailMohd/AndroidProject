@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="23dp"
+    android:background="@color/colorPrimary" >
+
+    <TextView
+        android:text="@string/places_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/txt_placeName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_placeAddress"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="@string/btn_return"
+        android:layout_marginTop="123dp"
+        android:layout_marginLeft="133dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="returnBtn" />
+
+</LinearLayout>

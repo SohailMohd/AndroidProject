@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13dp"
+    android:weightSum="1"
+    android:background="#b131793d" >
+
+    <TextView
+        android:text="@string/lbl_title"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginLeft="5dp"
+        android:textSize="17sp"
+        android:layout_marginBottom="17dp"/>
+
+    <Button
+        android:text="@string/btn_viewAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="openViewAdverisement" />
+
+    <Button
+        android:text="@string/btn_postAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="openPostAdverisement" />
+
+    <Button
+        android:text="@string/btn_nearbyCharity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openNearbyCharity" />
+
+    <Button
+        android:text="@string/btn_australiaCharity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openAustraliaCharity" />
+
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/charity_options1"
+        android:onClick="logOut" />
+
+</LinearLayout>

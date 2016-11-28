@@ -1,4 +1,5 @@
 <resources>
+    <string name="api_key">AIzaSyCAbk9WjFifsYWa3QkVT9f2ERCqDCkwcCU</string>
     <string name="app_name">CharityApp</string>
 
     <string name="welcome_title">Welcome!</string>
@@ -22,5 +23,46 @@
     <string name="edt_cphone">Enter cell phone</string>
     <string name="lbl_email">Email:</string>
     <string name="edt_email">Enter Email</string>
+    <string name="btn_viewAds">View Advertisements</string>
+    <string name="btn_postAd">Post Advertisment</string>
+
+    //charity options
+    <string name="lbl_title">What good works do you want to do today?</string>
+    <string name="btn_nearbyCharity">Nearby Places</string>
+    <string name="btn_australiaCharity">Special Mention Charities</string>
+
+
+    //Post Advertisements
+    <string name="lbl_adType">What type of Ad is this?</string>
+    <string name="edt_adTitle">Your ad title...</string>
+    <string name="btn_postAdvertisement">Post Ad</string>
+    <string name="charity_list">Charity list</string>
+    <string name="radio_food">Food</string>
+    <string name="radio_travel">Travel</string>
+    <string name="radio_education">Education</string>
+    <string name="edt_messageText">Enter ad message...</string>
+    <string name="btn_return">Return</string>
+
+    //australiacharity single listview
+    <string name="hint_charityName">Name</string>
+    <string name="lbl_charityDescription">Description: </string>
+    <string name="lbl_charityAddress">Address: </string>
+    <string name="lbl_charityPhone">Phone: </string>
+    <string name="lbl_charityWebsite">Website: </string>
+    <string name="hint_setCharityDescription">Description...</string>
+    <string name="hint_setCharityAddress">Address...</string>
+    <string name="hint_setCharityPhone">Phone...</string>
+    <string name="hing_setCharityWebsite">Website...</string>
+    <string name="viewPostTitle">Advertisements</string>
+
+    //view advertisements
+    <string name="btn_search">Search</string>
+    <string name="edt_searchItems">Type to search...</string>
+    <string name="logout_link">L</string>
+    <string name="places_title">Places Info</string>
+
+    //nearbycharity
+
+
 
 </resources>
